@@ -19,8 +19,8 @@ function addElmt(){
 function displayNewElmt(){
     let e = "";
     for (i=0;i<simpleArray.length;i++){
-       e = e+"element "+ i + " is: "+ simpleArray[i] + "<br>";
-       document.getElementById("display").innerHTML=e;
+        e = e+"element "+ i + " is: "+ simpleArray[i] + "<br>";
+        document.getElementById("display").innerHTML=e;
     }
 }
 
@@ -29,10 +29,11 @@ document.getElementById('buttonDisplay').addEventListener('click',displayNewElmt
 
 let readyForReversed = [10,20,30,40,50,60,70,80,90];
 function reverseStyle1 (){
-    document.getElementById('displayReverse1').innerHTML = readyForReversed.reverse();
+    document.getElementById('displayReverse1').innerHTML = readyForReversed.reverse()
     // document.write(readyForReversed.reverse());
     // console.log(readyForReversed.reverse())
 }
+
 function reverseStyle2(){
     let first = 0;
     let last = readyForReversed.length - 1;
@@ -42,8 +43,8 @@ function reverseStyle2(){
         readyForReversed[last] = newArrayElement;
         first++;
         last--;
-    }document.getElementById('displayReverse2').innerHTML = readyForReversed;
+    }document.write(readyForReversed);
 }
 
-document.getElementById('buttonReverseStyle1').addEventListener('click',reverseStyle1)
-document.getElementById('buttonReverseStyle2').addEventListener('click',reverseStyle2)
+document.getElementById('buttonDisplay').addEventListener('click',reverseStyle1);
+// document.getElementById('buttonDisplay').addEventListener('click',reverseStyle2);
